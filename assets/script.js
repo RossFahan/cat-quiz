@@ -20,6 +20,11 @@ var questions = [
   //event listeners
 
 
+  //DOM
+var startScreen = document.getElementById('start-screen');
+var startButton = document.getElementById('start-btn');
+var quizSection = document.getElementById('quiz');
+
   //quiz start function
 
 
@@ -30,6 +35,6 @@ var questions = [
 
 
   //end game
-  
+
 
   //high score
