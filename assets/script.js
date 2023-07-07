@@ -24,6 +24,14 @@ var questions = [
 var startScreen = document.getElementById('start-screen');
 var startButton = document.getElementById('start-btn');
 var quizSection = document.getElementById('quiz');
+var questionElement = document.getElementById('question');
+var optionsElement = document.getElementById('options');
+var timerElement = document.getElementById('timer');
+var endGameSection = document.getElementById('end-game');
+var finalScoreElement = document.getElementById('final-score');
+var initialsInput = document.getElementById('initials');
+var submitButton = document.getElementById('submit-btn');
+
 
   //quiz start function
 
