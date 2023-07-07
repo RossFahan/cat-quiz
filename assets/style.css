@@ -1,0 +1,18 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+
+  button.option {
+    background-color: purple;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+  }
+  
+  #timer {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 18px;
+  }
