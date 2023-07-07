@@ -1,3 +1,7 @@
+//global variables
+var questionIndex = 0;
+var timer = 60;
+
 //objects for questions
 var questions = [
     {
@@ -11,3 +15,21 @@ var questions = [
       answer: 1
     },
   ];
+
+
+  //event listeners
+
+
+  //quiz start function
+
+
+  //check correct
+
+
+  //timer
+
+
+  //end game
+  
+
+  //high score
