@@ -17,18 +17,31 @@ var finalScoreElement = document.getElementById('final-score');
 // Questions data
 var questions = [
   {
-    question: "Question 1",
-    options: ["Option 1", "Option 2", "Option 3", "Option 4"],
-    answer: "Option 1"
+    question: "What is the scientific name for domestic cats?",
+    options: ["Felis catus", "Panthera leo", "Canis lupus", "Ursus arctos"],
+    answer: "Felis catus"
   },
   {
-    question: "Question 2",
-    options: ["Option 1", "Option 2", "Option 3", "Option 4"],
-    answer: "Option 2"
+    question: "How many toes do most cats have on each front paw?",
+    options: ["Four", "Five", "Six", "Seven"],
+    answer: "Five"
   },
-  // ... Add more questions here
+  {
+    question: "What is a group of cats called?",
+    options: ["A clowder", "A herd", "A pride", "A flock"],
+    answer: "A clowder"
+  },
+  {
+    question: "Which sense in cats is highly developed, allowing them to detect scents over long distances?",
+    options: ["Taste", "Touch", "Sight", "Smell"],
+    answer: "Smell"
+  },
+  {
+    question: "What is a cat's primary form of communication?",
+    options: ["Barking", "Growling", "Meowing", "Squeaking"],
+    answer: "Meowing"
+  }
 ];
-
 // Event listener for start button
 startButton.addEventListener('click', function () {
   // Hide the start-screen section
