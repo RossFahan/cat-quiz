@@ -20,3 +20,14 @@ for (var i = 0; i < highScores.length; i++) {
   listItem.textContent = highScore.initials + ': ' + highScore.score;
   highScoresList.appendChild(listItem);
 }
+
+// Get the clear high scores button
+var clearHighScoresButton = document.getElementById('clear-high-scores');
+
+// Event listener for the clear high scores button
+clearHighScoresButton.addEventListener('click', function () {
+  // Clear high scores from local storage
+  localStorage.removeItem('highScores');
+  // Clear the high scores list on the page
+  highScoresList.innerHTML = '';
+});
