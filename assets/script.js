@@ -116,13 +116,42 @@ function endGame() {
   endGameSection.style.display = 'block';
   // Display final score
   finalScoreElement.textContent = 'Your final score is: ' + score;
+
+   // Get the form element
+   var scoreForm = document.getElementById('score-form');
+
+   // Event listener for the form submission
+   scoreForm.addEventListener('submit', function (event) {
+     event.preventDefault(); // Prevent the form from submitting normally
+ 
+     // Get the value of the initials input
+     var userInitials = document.getElementById('initials').value.trim();
+ 
+     // Check if initials are not empty
+     if (userInitials !== "") {
+       // Save the score and initials to local storage
+       saveHighScore(userInitials, score);
+ 
+       // Redirect the user back to the quiz page
+       window.location.href = 'index.html';
+     }
+   });
+ }
+
+// Function to save a new high score to local storage
+function saveHighScore(initials, score) {
+  // Get existing high scores from local storage, or create an empty array if none exists
+  var highScores = JSON.parse(localStorage.getItem('highScores')) || [];
+
+  // Create a new score object with provided initials and score
+  var newScore = { initials: initials, score: score };
+
+  // Add the new score to the highScores array
+  highScores.push(newScore);
+
+  // Sort the high scores in descending order based on score
+  highScores.sort((a, b) => b.score - a.score);
+
+  // Save the sorted high scores back to local storage
+  localStorage.setItem('highScores', JSON.stringify(highScores));
 }
-
- // Get the back button element on the high scores page
- var backToQuizButton = document.getElementById('back-to-quiz');
-
- // Event listener for the back button
- backToQuizButton.addEventListener('click', function () {
-   // Redirect the user back to the quiz page
-   window.location.href = 'index.html';
- });
