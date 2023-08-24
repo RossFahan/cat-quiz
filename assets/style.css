@@ -16,3 +16,8 @@ body {
     right: 10px;
     font-size: 18px;
   }
+.options-btn{
+  margin: 5px;
+  background-color: aquamarine;
+  color: black;
+}
