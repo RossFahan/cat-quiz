@@ -133,7 +133,7 @@ function endGame() {
        saveHighScore(userInitials, score);
  
        // Redirect the user back to the quiz page
-       window.location.href = 'index.html';
+       window.location.href = 'highscores.html';
      }
    });
  }

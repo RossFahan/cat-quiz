@@ -8,37 +8,40 @@
 </head>
 
 <body>
+  <div id="timer">Time: <span id="time-left">60</span></div>
   <header>
     <div class="header-content">
-      <div id="timer">Time: <span id="time-left">60</span></div>
+
       <div id="high-scores-link">
         <a href="highscores.html" id="view-scores">View High Scores</a>
       </div>
     </div>
     <h1>Cat Quiz Challenge!</h1>
   </header>
-  <main>
-    <section id="start-screen">
-      <h2>Welcome to the Cat Quiz! 😼 </h2>
-      <button id="start-btn">Start Quiz</button>
-    </section>
+  <div class="main-container">
+    <main>
+      <section id="start-screen">
+        <h2>Welcome to the Cat Quiz! 😼 </h2>
+        <button id="start-btn">Start Quiz</button>
+      </section>
 
-    <section id="quiz">
-      <div id="question"></div>
-      <div id="options">
-      </div>
-    </section>
+      <section id="quiz">
+        <div id="question"></div>
+        <div id="options">
+        </div>
+      </section>
 
-    <section id="end-game">
-      <h2>All done!</h2>
-      <p>Your final score is: <span id="final-score">0</span></p>
-      <form id="score-form">
-        <label for="initials">Enter your initials:</label>
-        <input type="text" id="initials" required>
-        <button type="submit">Submit</button>
-      </form>
-    </section>
-  </main>
+      <section id="end-game">
+        <h2>All done!</h2>
+        <p>Your final score is: <span id="final-score">0</span></p>
+        <form id="score-form">
+          <label for="initials">Enter your initials:</label>
+          <input type="text" id="initials" required>
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+  </div>
 
   <script src="./assets/script.js"></script>
 </body>
